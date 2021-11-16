@@ -66,6 +66,12 @@
       url("../fonts/roboto-slab-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/*.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}*/
+
 body {
   display: flex;
   flex-direction: column;
@@ -251,3 +257,145 @@ body {
 }
 
 /* FOOTER */
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #222222;
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 942px;
+  /*height: 450px;*/
+  margin-bottom: 115px;
+  background: url(../img/Map-Image.png) no-repeat;
+  background-position: right;
+}
+
+.contact-info-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 0 0 25px 0;
+  color: white;
+}
+
+.contact-info-title-text {
+  font-family: "Roboto Slab";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+  margin: 0 0 75px 0;
+}
+
+/* ul */
+.form-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-item:not(:nth-last-child(-n + 1)) {
+  margin-bottom: 25px;
+}
+
+.input-style {
+  width: 450px;
+  height: 52px;
+  border: 1px solid #7d7d7d;
+}
+
+.input-style::placeholder {
+  padding-left: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form-item input[type="email"]:valid {
+  outline-color: green;
+}
+
+.form-item input[type="email"]:invalid {
+  outline-color: red;
+}
+
+.form-item input[type="text"]:valid {
+  outline-color: green;
+}
+
+.form-item input[type="text"]:invalid {
+  outline-color: red;
+}
+
+/* поле SUBJECT */
+.input-style-subject-text {
+  width: 450px;
+  height: 52px;
+  border: 1px solid #7d7d7d;
+}
+
+.input-style-subject-text::placeholder {
+  padding-left: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* YOUR MESSAGE */
+.contact-form {
+  border: 1px solid red;
+}
+
+.form-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.c-column-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-area {
+  resize: none;
+  width: 450px;
+  height: 212px;
+}
+
+.text-area::placeholder {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* button SEND MESSAGE */
+
+.send-message {
+  width: 240px;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  background-color: #fed136;
+  border: 1px solid #7d7d7d;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+

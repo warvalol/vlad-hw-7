@@ -386,6 +386,10 @@ body {
 
 /* button SEND MESSAGE */
 
+button {
+  cursor: pointer;
+}
+
 .send-message {
   width: 240px;
   height: 65px;
